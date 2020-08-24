@@ -1,33 +1,33 @@
-# Contributing
-Changes and improvements are more than welcome! Feel free to fork and open a pull request.
+# Contribuyendo
+¡Los cambios y mejoras son más que bienvenidos! Siéntase libre de hacer fork y abrir un Pull Request.
 
-Please follow the house rules to have a bigger chance of your contribution being merged.
+Siga las reglas de la casa para tener una mayor probabilidad de que su contribución se fusione.
 
-## House rules
+## Reglas de la casa
 
-### How to make changes
- - To make changes, create a new branch based on `master` (do not create one from `gh-pages` unless strictly necessary) and make them there, then create a Pull Request to master.  
- `gh-pages` is different from master in that it contains sharing features, analytics and other things that have no direct bearing with the game. `master` is the "pure" version of the game.
- - If you want to modify the CSS, please edit the SCSS files present in `style/`: `main.scss` and others. Don't edit the `main.css`, because it's supposed to be generated.  
- In order to compile your SCSS modifications, you need to use the `sass` gem (install it by running `gem install sass` once Ruby is installed).  
- To run SASS, simply use the following command:  
+### Cómo hacer cambios
+ - Para realizar cambios, cree una nueva rama basada en `master` (no crear una desde `gh-pages` a menos que sea estrictamente necesario) y hazlos allí, luego crear un Pull Request al `master`.  
+ `gh-pages` se diferencia de master en que el mismo contiene funciones de compartir, analíticas y otras cosas que no tienen relación directa con el juego. `master` es la versión "pura" del juego.
+ - Si quieres modificar el CSS, por favor edita los archivos SCSS presentes en `style/`: `main.scss` y otros. No edites `main.css`, por que  es supuesto a ser generado.  
+ Para compilar tus modificaciones de SCSS, necesitas usar la gema `sass` (instalalo ejecutando `gem install sass` una vez que Ruby se encuentre instalado).  
+ Para ejecutar SASS, simplemente usa el siguiente comando:  
  `sass --unix-newlines --watch style/main.scss`  
- SASS will automatically recompile your css when changed.
- - `Rakefile` contains some tasks that help during development. Feel free to add useful tasks if needed.
- - Please use 2-space indentation when editing the JavaScript. A `.jshintrc` file is present, which will help your code to follow the guidelines if you install and run `jshint`.
- - Please test your modification thoroughly before submitting your Pull Request.
+ SASS va a recompilar automáticamente tu css cuando cambie.
+ - `Rakefile` contiene algunas tareas que pueden ayudar durante el desarrollo. Siéntete libre de añadir tareas útiles de ser necesario.
+ - Por favor use identación de 2-espacios cuando estés editando JavaScript. Se encuentra un archivo `.jshintrc`, el cual ayudará a tu código a seguir las líneas de guía si instalas y ejecutas `jshint`.
+ - Pruebe su modificación a fondo antes de enviar su Pull Request.
 
-### Changes that might not be accepted
+### Cambios que no serán aceptados
 We have to be conservative with the core game. This means that some modifications won't be merged, or will have to be evaluated carefully before being merged:
 
- - Undo/redo features
- - Save/reload features
- - Changes to how the tiles look or their contents
- - Changes to the layout
- - Changes to the grid size
+ - Funciones de Deshacer/Rehacer
+ - Funciones de Guardar/Recargar
+ - Cambios en el aspecto de los mosaicos/cuadros o su contenido.
+ - Cambios en el diseño
+ - Cambios en el tamaño de la cuadrícula
 
-### Changes that are welcome
- - Bug fixes
- - Compatibility improvements
- - "Under the hood" enhancements
- - Small changes that don't have an impact on the core gameplay
+### Cambios que serán bienvenidos
+ - Solucion de errores
+ - Mejoras de compatibilidad
+ - Mejoras "bajo el capó"
+ - Pequeños cambios que no tienen impacto en el juego principal
